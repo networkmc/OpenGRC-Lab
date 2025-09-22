@@ -1,0 +1,57 @@
+[
+  {
+    "model": "registry.risk",
+    "pk": 1,
+    "fields": {
+      "name": "Unpatched Apache Server",
+      "description": "Public-facing server missing latest security updates.",
+      "severity": "High",
+      "likelihood": "Likely",
+      "mitigation_plan": "Apply latest patch and restrict access via firewall."
+    }
+  },
+  {
+    "model": "registry.risk",
+    "pk": 2,
+    "fields": {
+      "name": "Weak Password Policy",
+      "description": "Users allowed to set short or common passwords.",
+      "severity": "Medium",
+      "likelihood": "Likely",
+      "mitigation_plan": "Enforce password complexity and rotation."
+    }
+  },
+  {
+    "model": "registry.risk",
+    "pk": 3,
+    "fields": {
+      "name": "Missing Audit Trail",
+      "description": "No logging of admin actions or data changes.",
+      "severity": "High",
+      "likelihood": "Possible",
+      "mitigation_plan": "Implement logging and regular audit reviews."
+    }
+  },
+  {
+    "model": "registry.risk",
+    "pk": 4,
+    "fields": {
+      "name": "Default Credentials in Production",
+      "description": "System still uses vendor-supplied default login.",
+      "severity": "High",
+      "likelihood": "Likely",
+      "mitigation_plan": "Disable default accounts and enforce credential rotation."
+    }
+  },
+  {
+    "model": "registry.risk",
+    "pk": 5,
+    "fields": {
+      "name": "No Backup Policy",
+      "description": "Critical data is not backed up regularly.",
+      "severity": "Medium",
+      "likelihood": "Possible",
+      "mitigation_plan": "Establish weekly backup schedule with offsite redundancy."
+    }
+  }
+]
